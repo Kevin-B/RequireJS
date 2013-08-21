@@ -1,0 +1,151 @@
+/*******************************************************************
+*** --- GLOBAL CSS RESET :: REMOVE DEFAULT BROWSER STYLING --- *****
+********************************************************************/
+/*Elements*/     html,body,div,iframe,span,object,
+/*Typography*/   basefont,big,blockquote,font,h1,h2,h3,h4,h5,h6,p,q,s,sub,sup,tt,
+/*Phrase Tags*/  abbr,acronym,address,bdo,cite,code,del,dfn,ins,kbd,samp,var,
+/*Images*/       img,map,
+/*Links*/        a,base,
+/*Lists*/        dl,dt,dd,li,ol,ul,
+/*Forms*/        button,fieldset,form,label,legend,textarea,
+/*Tables*/       caption,col,colgroup,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	letter-spacing:0px;
+	font-size:100.1%;
+	border:none;
+	outline:none;
+	vertical-align:baseline;
+}
+
+/* --- HTML5 SPECIFIC --- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+    display:block;
+}
+
+/* --- LISTS --- */
+nav,ol,ul,li {
+	list-style-type:none;
+}
+
+/* --- FORM --- */
+input,select,textarea {
+	margin:0;
+	padding:0;
+}
+
+label,input[type=button],input[type=submit],button {
+	cursor:pointer; /* Hand cursor on clickable input elements */
+}
+
+textarea {
+	overflow:auto; /* Remove IE textarea scrollbars */
+}
+
+/* --- CLEAR --- */
+.clear {
+    clear:both;
+}
+
+
+/* --- LINKS --- */
+a {
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#99B001;
+	text-decoration:underline;
+}
+
+
+/* --- VISIBILITY --- */
+.hidden {
+	/* Hide for both screenreaders and browsers; */
+	display:none;
+	visibility:hidden;
+} 
+
+.visuallyHidden {
+	/* Hide only visually, but have it available for screenreaders; webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+	position:absolute !important;    
+	clip:rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip:rect(1px, 1px, 1px, 1px);
+}
+
+.invisible {
+	visibility:hidden; /* Hide visually and from screenreaders, but maintain layout */
+}
+
+
+/* --- SELECTION HIGHLIGHT COLOR SCHEME {Not standards-compliant!} --- */
+::-moz-selection {color:#fff; background:#cc0000;}
+::selection {color:#fff; background:#cc0000;}
+h2::-moz-selection {color:#fff; background:green;}
+h2::selection {color:#fff; background:green;}
+
+
+/* --- DEFINITION LISTS --- */
+dl.footLinks {margin-top:20px; font-size:12px;}
+dt {float:left; clear:left;}
+dt:after {content:":";}
+dd {margin-bottom:30px; margin-left:85px;}
+
+
+/* --- SHADOW EFFECTS --- */
+.dropshadow {
+	-moz-box-shadow:5px #CCC;
+	-webkit-box-shadow:5px #CCC;
+	box-shadow:5px #CCC;
+}
+
+.shadowInset {
+	-moz-box-shadow:inset 0 0 5px #000;
+	-webkit-box-shadow:inset 0 0 5px #000;
+	box-shadow:inset 0 0 5px #000;
+}
+
+.shadowInsetTopleft {
+	-moz-box-shadow:inset 2px 2px 5px #888;
+	-webkit-box-shadow:inset 2px 2px 5px #888;
+	box-shadow:inset 2px 2px 5px #888;
+}
+
+.shadowInsetBottomRight {
+	-moz-box-shadow:inset 2px 2px 5px #888;
+	-webkit-box-shadow:inset 2px 2px 5px #888;
+	box-shadow: 3px 3px 5px #888;
+}
+
+
+/* --- ERROR HANDLING --- */
+#errorEntry {
+	margin:25px 0;
+	padding:5px;
+	border:6px ridge #888;
+	background:#FDFD9F;
+}
+
+.traceDump {
+	margin:30px 0;
+}
+
+
+/*******************************************************************
+*** --- CUSTOMIZED SITE CSS STYLING --- ****************************
+********************************************************************/
+
+/* --- SET DEFAULT HTML/BODY --- */
+html {
+	height:100%;
+}
+
+body {
+	background:transparent /* url('/images/bg.jpg') 0 0 repeat */;
+	padding-bottom:100px;
+}
+
